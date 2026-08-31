@@ -48,9 +48,15 @@ ul.plain li::before {
   
   ul.plain li { padding: 6px 0; }
   footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  @media (prefers-color-scheme: dark) {
-    :root { --ink: #ececec; --muted: #a3a3a3; --line: #333; --accent: #7fb6da; --bg: #141414; }
-  }
+  
+  .dark-mode {
+  --ink: #ececec;
+  --muted: #a3a3a3;
+  --line: #333;
+  --accent: #7fb6da;
+  --bg: #141414;
+}
+
 </style>
 </head>
 <body>
@@ -65,6 +71,10 @@ ul.plain li::before {
       <a href="https://github.com/ruthsfrost/">GitHub</a>
     </p>
   </header>
+
+  <button id="theme-toggle" style="margin-top: 12px; font-size: 14px;">
+  Toggle dark mode
+  </button>
 
   <p class="lede">
     Documentation should make hard things easier. I create structured, intuitive content that reduces support load, improves user confidence, and helps teams work more efficiently. My work spans DITA/XML, developer documentation, and process workflows for technical and healthcare‑focused audiences. </p>
@@ -137,5 +147,13 @@ National Cancer Institute - Documentation Samples
   </footer>
 
 </div>
+
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+  });
+</script>
+  
 </body>
 </html>
