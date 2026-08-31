@@ -144,17 +144,23 @@ National Cancer Institute - Documentation Samples
     
 
   <footer>
-    <p>Built and hosted on GitHub Pages. Last updated August 2026.</p>
+    <p>Built and hosted on GitHub Pages. Last updated <span id="last-updated"></span>.</p>
   </footer>
 
 </div>
 
-  <script>
+<script>
   const toggle = document.getElementById('theme-toggle');
   toggle.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark-mode');
   });
 </script>
-  
+
+<script>
+  const updated = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('last-updated').textContent = updated.toLocaleDateString(undefined, options);
+</script>
+
 </body>
 </html>
