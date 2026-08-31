@@ -36,7 +36,16 @@
   .item h3 a:hover { text-decoration: underline; }
   .item p { margin: 0; color: var(--muted); font-size: 16px; }
   .tags { margin-top: 8px; font-size: 13px; color: var(--muted); }
-  ul.plain { list-style: none; padding: 0; margin: 0; }
+
+  ul.plain { 
+  list-style: none; 
+  padding-left: 0; 
+}
+ul.plain li::before {
+  content: "• ";
+  color: var(--muted);
+}
+  
   ul.plain li { padding: 6px 0; }
   footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
   @media (prefers-color-scheme: dark) {
@@ -58,7 +67,16 @@
   </header>
 
   <p class="lede">
-    I've always believed that the best documentation is intuitive: users find what they need, do what they came to do, and move on without frustration. When documentation works, nobody notices. When it doesn't, everyone pays the price: in support tickets, in workarounds, in lost confidence.</p>
+    Documentation should make hard things easier. I create structured, intuitive content that reduces support load, improves user confidence, and helps teams work more efficiently. My work spans DITA/XML, developer documentation, and process workflows for technical and healthcare‑focused audiences. </p>
+
+  <h2>About</h2>
+  I’m a senior technical writer with experience in healthcare IT, developer documentation, and structured authoring. I specialize in DITA/XML, workflow analysis, and creating documentation that scales across teams and products.
+
+  <h2>How I work</h2>
+  <li>I start by understanding the user’s goal and constraints.</li>
+  <li>I design content structures that scale and reduce duplication.</li>
+  <li>I collaborate closely with SMEs to ensure accuracy.</li>
+  <li>I validate content through testing, feedback, and iteration.</li>
 
   <h2>Selected work</h2>
 
@@ -95,10 +113,10 @@ National Cancer Institute - Documentation Samples
 
   <h2>What I do</h2>
   <ul class="plain">
-<li>Write clear, intuitive documentation that helps users accomplish tasks without friction</li>
-<li>Develop structured, reusable content using DITA/XML and modern authoring tools</li>
-<li>Create user guides, developer documentation, and workflow‑focused content</li>
-<li>Analyze processes and translate them into accurate, maintainable documentation</li>
+<li>Write clear, intuitive documentation that helps users accomplish tasks without friction.</li>
+<li>Develop structured, reusable content using DITA/XML and modern authoring tools.</li>
+<li>Create user guides, developer documentation, and workflow‑focused content.</li>
+<li>Analyze processes and translate them into accurate, maintainable documentation.</li>
   </ul>
 
   <h2>Tools</h2>
